@@ -50,3 +50,20 @@ def simple_shift(text, shift):
             result += char
 
     return result
+
+
+def simple_unshift(text, shift):
+    """
+    Reverse the simple_shift encryption.
+
+    Decryption is just shifting in the opposite direction!
+
+    Args:
+        text: The encrypted string
+        shift: The same shift value used for encryption
+
+    Returns:
+        The decrypted (original) string
+    """
+    # Decryption = shifting backwards (negative)
+    return simple_shift(text, -shift)
